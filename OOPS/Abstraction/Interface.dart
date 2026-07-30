@@ -6,6 +6,7 @@ abstract class Animal {
   void eat();
   void sleeping();
   void running();
+  void barking();
 }
 
 // Making the child class
@@ -24,6 +25,11 @@ class Dog extends Animal {
   void running() {
     print('Dog is running');
   }
+
+  @override
+  void barking() {
+    print("Dog is barking");
+  }
 }
 
 // Making the main method to
@@ -32,4 +38,5 @@ void main() {
   D1.eat();
   D1.running();
   D1.sleeping();
+  D1.barking();
 }
